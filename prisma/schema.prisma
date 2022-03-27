@@ -16,6 +16,7 @@ model User {
 
   password Password?
   notes    Note[]
+  items Item[]
 }
 
 model Password {
@@ -29,6 +30,19 @@ model Note {
   id    String @id @default(cuid())
   title String
   body  String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId String
+}
+
+model  Item {
+  id    String @id @default(cuid())
+  title String
+  brief  String
+  solanaAdress String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

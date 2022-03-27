@@ -1,7 +1,28 @@
 module.exports = {
+  darkMode: "class",
   content: ["./app/**/*.{ts,tsx,jsx,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        quicksand: ["Quicksand", "sans-serif"],
+      }
+    },
+    colors: {
+      blue: {
+        50: "#E5F9FF",
+        300: "#00CBF8",
+        400: "#60B0B5",
+        600: "#0B1F36",
+      },
+      gray: {
+        800: "#21404D",
+      },
+      indigo: {
+        900: "#4F4C61",
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-radix")(),
+  ],
 };
