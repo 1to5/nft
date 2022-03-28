@@ -20,7 +20,7 @@ export default function Nav() {
             <input 
             type="text" 
             placeholder="Search..." 
-            className="h-12 w-full bg-blue-300 dark:bg-blue-600 text-blue-50 rounded-full focus:outline-none focus:shadow-outline"
+            className="h-12 w-full bg-blue-300 border-black dark:bg-blue-600 text-blue-50 rounded-full focus:outline-none focus:shadow-outline"
             />
         </nav>
     );
