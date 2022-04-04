@@ -27,8 +27,30 @@ export default function Nav() {
             <input 
             type="text" 
             placeholder="Search..." 
-            className="block ml-32 h-10 w-1/3 font-quicksand placeholder:text-gray-50 bg-blue-500 border-black text-[#FFFFFF] py-2 pl-9 rounded-full focus:outline-none focus:shadow-outline my-auto"
+            className="block ml-32 h-10 w-1/3 font-quicksand font-semibold placeholder:text-gray-50 bg-blue-500 border-black text-[#FFFFFF] py-2 pl-9 rounded-full focus:outline-none focus:shadow-outline my-auto"
             />
+            <div className='flex'>
+                <LinkItem href="explore">
+                    Explore
+                </LinkItem>
+                <LinkItem href="help">
+                    Help
+                </LinkItem>
+                <LinkItem href="blog">
+                    Blogs
+                </LinkItem>
+            </div>
         </nav>
     );
 }
+
+const LinkItem = ({href, children}) => {
+    return(
+        <Link 
+        to={href}
+        className=" flex-1 p-5 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
+            {children}
+        </Link>
+    )
+}
+
