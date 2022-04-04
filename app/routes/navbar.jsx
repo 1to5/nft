@@ -3,7 +3,7 @@ import {Link} from "remix";
 export default function Nav() {
     return(
         <nav 
-        className="flex h-20 bg-blue-600 dark:bg-blue-300">
+        className=" absolute w-full flex h-20 bg-blue-900 dark:bg-blue-300">
             <Link 
             to="/" 
             className="inline-flex ml-6 my-auto">
@@ -27,9 +27,9 @@ export default function Nav() {
             <input 
             type="text" 
             placeholder="Search..." 
-            className="block ml-32 h-10 w-1/3 font-quicksand font-semibold placeholder:text-gray-50 bg-blue-500 border-black text-[#FFFFFF] py-2 pl-9 rounded-full focus:outline-none focus:shadow-outline my-auto"
+            className="block ml-32 h-10 w-1/3 font-quicksand font-semibold placeholder:text-gray-50 text-gray-50 bg-blue-500 opacity-80 border-black py-2 pl-9 rounded-full focus:outline-none focus:shadow-outline my-auto"
             />
-            <div className='flex'>
+            <div className='relative left-0 flex'>
                 <LinkItem href="explore">
                     Explore
                 </LinkItem>
@@ -38,6 +38,9 @@ export default function Nav() {
                 </LinkItem>
                 <LinkItem href="blog">
                     Blogs
+                </LinkItem>
+                <LinkItem href="create">
+                    Create 
                 </LinkItem>
             </div>
         </nav>
@@ -48,7 +51,7 @@ const LinkItem = ({href, children}) => {
     return(
         <Link 
         to={href}
-        className=" flex-1 p-5 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
+        className=" flex-1 p-6 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
             {children}
         </Link>
     )

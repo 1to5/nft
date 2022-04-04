@@ -26,6 +26,15 @@ const BlogGridItem = ({id, title, children, thumbnail}) => {
         to={`/blog/${id}`}
         className='align-center'>
            <img src={thumbnail} /> 
+           <p text-2xl font-bold font-quicksand text-blue-50>
+                {title}
+           </p>
+           <p className=' font-quicksand text-gray-50'>
+                {children}
+           </p>
+           <div className='w-full h-36 bg-gray-800'>
+                Footer haha
+           </div>
         </Link>
     )
 }
