@@ -1,9 +1,10 @@
 import {Link} from "remix";
+import  {RiAccountCircleLine} from "react-icons/ri";
 
 export default function Nav() {
     return(
         <nav 
-        className=" absolute w-full flex h-20 bg-blue-900 dark:bg-blue-300">
+        className="relative w-full flex h-20 bg-blue-900 dark:bg-blue-300">
             <Link 
             to="/" 
             className="inline-flex ml-6 my-auto">
@@ -42,6 +43,12 @@ export default function Nav() {
                 <LinkItem href="create">
                     Create 
                 </LinkItem>
+                <div className=" my-auto p-6 items-center">
+                    <Link to="profile">
+                        <RiAccountCircleLine className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
+                    </Link>
+                </div>
+                
             </div>
         </nav>
     );
