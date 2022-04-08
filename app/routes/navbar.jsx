@@ -28,9 +28,13 @@ export default function Nav() {
             <input 
             type="text" 
             placeholder="Search..." 
-            className="block ml-32 h-10 w-1/3 font-quicksand font-semibold placeholder:text-gray-50 text-gray-50 bg-blue-500 opacity-80 border-black py-2 pl-9 rounded-full focus:outline-none focus:shadow-outline my-auto"
+            className="block ml-32 h-10 w-1/3 font-quicksand font-semibold 
+            placeholder:text-gray-50 text-gray-50 bg-blue-500 opacity-80 
+            border-black py-2 pl-9 rounded-full focus:outline-none 
+            focus:shadow-outline my-auto"
             />
-            <div className='relative left-0 flex'>
+            <div 
+            className='absolute right-0 flex mr-16'>
                 <LinkItem href="explore">
                     Explore
                 </LinkItem>
@@ -48,9 +52,12 @@ export default function Nav() {
                         <RiAccountCircleLine className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
                     </Link>
                 </div>
-                <div className=" my-auto p-6 items-center">
-                    <Link to="wallet">
-                        <RiWallet3Line className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
+                <div 
+                className=" my-auto p-6 items-center">
+                    <Link 
+                    to="wallet">
+                        <RiWallet3Line 
+                        className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
                     </Link>
                 </div>
             </div>
@@ -62,7 +69,7 @@ const LinkItem = ({href, children}) => {
     return(
         <Link 
         to={href}
-        className=" flex-1 p-6 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
+        className=" flex-1 py-6 px-10 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
             {children}
         </Link>
     )
