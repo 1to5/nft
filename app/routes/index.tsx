@@ -66,8 +66,18 @@ const FeaturedNFTs = () => {
           Today's Top NFTs
         </h1>
       </div>
-      <div className='flex'>
+      <div className='flex '>
+        {/* <div className='pr-9 h-10 w-10 my-auto -rotate-45 border-t-4 border-l-4 border-blue-50 rounded-sm'>
 
+        </div> */}
+        <div className='flex gap-16'>
+          <FeaturedNFTsItems/>
+          <FeaturedNFTsItems/>
+          <FeaturedNFTsItems/>
+        </div>
+        {/* <div className='pl-9 w-10 h-10 my-auto rotate-45 border-t-4 border-r-4 border-blue-50 rounded-sm'>
+
+        </div> */}
       </div>
     </div>
   )
@@ -76,8 +86,8 @@ const FeaturedNFTs = () => {
 
 const FeaturedNFTsItems = () => {
   return(
-    <div className='w-80 h-96'>
-
+    <div className='w-72 h-96 bg-gray-50 rounded-xl'>
+      
     </div>  
   )
 }
