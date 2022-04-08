@@ -1,5 +1,5 @@
 import {Link} from "remix";
-import  {RiAccountCircleLine} from "react-icons/ri";
+import  {RiAccountCircleLine, RiWallet3Line} from "react-icons/ri";
 
 export default function Nav() {
     return(
@@ -48,7 +48,11 @@ export default function Nav() {
                         <RiAccountCircleLine className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
                     </Link>
                 </div>
-                
+                <div className=" my-auto p-6 items-center">
+                    <Link to="wallet">
+                        <RiWallet3Line className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
+                    </Link>
+                </div>
             </div>
         </nav>
     );
