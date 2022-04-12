@@ -1,7 +1,8 @@
 import { Link } from "remix";
 import { useOptionalUser } from "~/utils";
 import Nav from "./navbar.jsx";
-import '../styles/index.css'
+import '../styles/index.css';
+import {FeaturedNFTsItems} from "./components/featured-nfts-items.jsx";
 
 export default function Index() {
   const user = useOptionalUser();
@@ -48,9 +49,8 @@ function HomePage() {
          
         </div>
       </div>
-      <div>
-        <FeaturedNFTs/>
-      </div>
+      <FeaturedNFTs/>
+      <DiscoverAndCreate />
     </div>
   )
 }
@@ -71,23 +71,37 @@ const FeaturedNFTs = () => {
 
         </div> */}
         <div className='flex gap-16'>
-          <FeaturedNFTsItems/>
-          <FeaturedNFTsItems/>
-          <FeaturedNFTsItems/>
+          <FeaturedNFTsItems href="nft1">L</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="nft2">L</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="nft3">L</FeaturedNFTsItems>
         </div>
         {/* <div className='pl-9 w-10 h-10 my-auto rotate-45 border-t-4 border-r-4 border-blue-50 rounded-sm'>
 
         </div> */}
       </div>
+      
     </div>
   )
 }
 
-
-const FeaturedNFTsItems = () => {
+const DiscoverAndCreate = () => {
   return(
-    <div className='w-72 h-96 bg-gray-50 rounded-xl'>
-      
-    </div>  
+    <div
+    className='mx-auto mt-32'>
+      <div
+      className='text-center h-32 w-full'>
+        <h1
+        className='text-2xl font-quicksand font-black text-gray-50'>
+          Discover and Create NFTs
+        </h1>
+      </div>
+      <div className='flex '>
+        <div className='flex gap-16'>
+          <FeaturedNFTsItems href="nft1">L</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="nft2">L</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="nft3">L</FeaturedNFTsItems>
+        </div>
+      </div>
+    </div>
   )
 }
