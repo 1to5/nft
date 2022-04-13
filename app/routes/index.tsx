@@ -50,7 +50,7 @@ function HomePage() {
         </div>
       </div>
       <FeaturedNFTs/>
-      <DiscoverAndCreate />
+      
     </div>
   )
 }
@@ -79,7 +79,7 @@ const FeaturedNFTs = () => {
 
         </div> */}
       </div>
-      
+      <DiscoverAndCreate/>
     </div>
   )
 }
