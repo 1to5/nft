@@ -8,6 +8,7 @@ import {
   ScrollRestoration,
 } from "remix";
 import type { LinksFunction, MetaFunction, LoaderFunction } from "remix";
+import { useCatch } from "@remix-run/react";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import fontStylesheetUrl from "./styles/fonts.css";
@@ -53,5 +54,38 @@ export default function App() {
         <LiveReload />
       </body>
     </html>
+  );
+}
+
+export function ErrorBoundary({ error }) {
+  console.error(error);
+  return (
+    <html>
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        {/* add the UI you want your users to see */}
+        <p>404</p>
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+
+
+export function CatchBoundary() {
+  const caught = useCatch();
+
+  return (
+    <div>
+      <h1>Caught</h1>
+      <p>Status: {caught.status}</p>
+      <pre>
+        <code>{JSON.stringify(caught.data, null, 2)}</code>
+      </pre>
+    </div>
   );
 }
