@@ -1,3 +1,4 @@
+import { Link } from 'remix';
 export default function FeaturedNFTsItems ({href, children}) {
   return(
     <Link to={href}>
