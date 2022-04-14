@@ -1,73 +1,107 @@
 import { Link } from "remix";
 import { useOptionalUser } from "~/utils";
 import Nav from "./navbar.jsx";
+import '../styles/index.css';
+import {FeaturedNFTsItems} from "./components/featured-nfts-items.jsx";
 
 export default function Index() {
   const user = useOptionalUser();
   return (
-    <main className="relative min-h-screen">
+    <main className="relative bg-blue-600 min-h-screen">
       <Nav />
-      <div className='font-bold '>
-        cock
-      </div>
-      {/* <div className="relative sm:pb-16 sm:pt-8">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-            <div className="absolute inset-0">
-              <img
-                className="h-full w-full object-cover"
-                src="https://user-images.githubusercontent.com/1500684/157774694-99820c51-8165-4908-a031-34fc371ac0d6.jpg"
-                alt="Sonic Youth On Stage"
-              />
-              <div className="absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" />
-            </div>
-            <div className="lg:pb-18 relative px-4 pt-16 pb-8 sm:px-6 sm:pt-24 sm:pb-14 lg:px-8 lg:pt-32">
-              <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
-                <span className="block uppercase text-yellow-500 drop-shadow-md">
-                  Indie Stack
-                </span>
-              </h1>
-              <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
-                Check the README.md file for instructions on how to get this
-                project deployed.
-              </p>
-              <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                {user ? (
-                  <Link
-                    to="/notes"
-                    className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                  >
-                    View Notes for {user.email}
-                  </Link>
-                ) : (
-                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                    <Link
-                      to="/join"
-                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                    >
-                      Sign up
-                    </Link>
-                    <Link
-                      to="/login"
-                      className="flex items-center justify-center rounded-md bg-yellow-500 px-4 py-3 font-medium text-white hover:bg-yellow-600  "
-                    >
-                      Log In
-                    </Link>
-                  </div>
-                )}
-              </div>
-              <a href="https://remix.run">
-                <img
-                  src="https://user-images.githubusercontent.com/1500684/158298926-e45dafff-3544-4b69-96d6-d3bcc33fc76a.svg"
-                  alt="Remix"
-                  className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div> */}
+      <HomePage/>
     </main>
   );
+}
+
+function HomePage() {
+  return (
+    <div className='bg-blue-600 max-w-screen-lg mx-auto'>
+      <div className='relative flex mt-10'>
+        <div className='flex-col my-auto items-center'>
+          <h1 className='text-4xl font-bold font-quicksand text-gray-50'>
+            Discover and Buy your own <br/> NFTs & Digital Properties
+          </h1>
+          <p className="text-lg pt-6 font-medium font-quicksand text-gray-50">
+            Providing convenience to anyone <br/> 
+            who wants to declare ownership on <br/> 
+            their digital properties.
+          </p>
+          <div className="flex justify-center mt-10 w-80">
+            <Link 
+            to="/create" 
+            className="relative ease-in duration-100 item-left mr-4 
+            rounded-lg w-40 border-2 bg-blue-300 border-blue-300 
+            hover:bg-blue-200 font-quicksand text-gray-100 text-center 
+            hover:text-gray-50 py-2 font-bold">
+              Create
+            </Link>
+            <Link 
+            to="/explore" 
+            className="ease-in duration-100 item-center rounded-lg
+             w-40 border-blue-300 border-2 bg-gray-800 hover:bg-gray-700
+              font-quicksand text-blue-400 py-2 text-center font-bold">
+              Discover
+            </Link>
+          </div>
+        </div>
+        <div className="w-96 h-80 top-0 right-0 absolute rounded-xl bg-gray-50 ">
+         
+        </div>
+      </div>
+      <FeaturedNFTs/>
+      
+    </div>
+  )
+}
+
+const FeaturedNFTs = () => {
+  return(
+    <div 
+    className='mx-auto mt-32'>
+      <div 
+      className='text-center h-32 w-full'>
+        <h1 
+        className='text-2xl font-quicksand font-black text-gray-50 '>
+          Today's Top NFTs
+        </h1>
+      </div>
+      <div className='flex '>
+        {/* <div className='pr-9 h-10 w-10 my-auto -rotate-45 border-t-4 border-l-4 border-blue-50 rounded-sm'>
+
+        </div> */}
+        <div className='flex gap-16'>
+          <FeaturedNFTsItems href="nft1">L</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="nft2">L</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="nft3">L</FeaturedNFTsItems>
+        </div>
+        {/* <div className='pl-9 w-10 h-10 my-auto rotate-45 border-t-4 border-r-4 border-blue-50 rounded-sm'>
+
+        </div> */}
+      </div>
+      <DiscoverAndCreate/>
+    </div>
+  )
+}
+
+const DiscoverAndCreate = () => {
+  return(
+    <div
+    className='mx-auto mt-32'>
+      <div
+      className='text-center h-32 w-full'>
+        <h1
+        className='text-2xl font-quicksand font-black text-gray-50'>
+          Discover and Create NFTs
+        </h1>
+      </div>
+      <div className='flex '>
+        <div className='flex gap-16'>
+          <FeaturedNFTsItems href="nft1">L</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="nft2">L</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="nft3">L</FeaturedNFTsItems>
+        </div>
+      </div>
+    </div>
+  )
 }

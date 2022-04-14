@@ -1,0 +1,13 @@
+/* .container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+
+
+/* Vector 24 */
+.arrow {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
