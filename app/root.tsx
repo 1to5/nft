@@ -9,6 +9,7 @@ import {
 } from "remix";
 import type { LinksFunction, MetaFunction, LoaderFunction } from "remix";
 import { useCatch } from "@remix-run/react";
+import Nav from './routes/navbar.jsx';
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import fontStylesheetUrl from "./styles/fonts.css";
@@ -48,6 +49,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
+        <Nav/>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
