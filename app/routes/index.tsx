@@ -152,7 +152,7 @@ const DiscoverAndCreate = () => {
 
 const Blogz = () => {
   return (
-    <div className='mx-auto mt-32'>
+    <div className='mx-auto mt-32 pb-20'>
       <div className='text-center h-24'>
         <h1
         className='font-black text-2xl font-quicksand text-gray-50'>Before you Begin:</h1>
@@ -167,17 +167,23 @@ const BlogzItem = () => {
     <div className='flex gap-12 w-4/5 mx-auto'>
       <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
-
+          <p className='font-bold text-center font-quicksand text-gray-50'>
+            Bloggio #1
+          </p>
         </div>
       </div>
       <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
-
+          <p className='font-bold text-center font-quicksand text-gray-50'>
+            Bloggio #2
+          </p>
         </div>
       </div>
       <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
-
+          <p className='font-bold text-center font-quicksand text-gray-50'>
+            Bloggio #3
+          </p>
         </div>
       </div>
     </div>

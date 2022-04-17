@@ -9,7 +9,9 @@ import {
 } from "remix";
 import type { LinksFunction, MetaFunction, LoaderFunction } from "remix";
 import { useCatch } from "@remix-run/react";
+
 import Nav from './routes/navbar.jsx';
+import Footer from './routes/components/footer.jsx';
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import fontStylesheetUrl from "./styles/fonts.css";
@@ -54,6 +56,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer/>
       </body>
     </html>
   );
