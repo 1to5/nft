@@ -4,7 +4,6 @@ export default function Create() {
   return (
     
     <main>
-      <Nav/>
       <h1>Create</h1>
     </main>
   );

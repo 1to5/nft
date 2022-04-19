@@ -47,13 +47,13 @@ export default function Nav() {
                 <LinkItem href="create">
                     Create 
                 </LinkItem>
-                <div className=" my-auto p-6 items-center">
+                <div className=" my-auto lg:p-3 2xl:p-6 items-center">
                     <Link to="profile">
                         <RiAccountCircleLine className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
                     </Link>
                 </div>
                 <div 
-                className=" my-auto p-6 items-center">
+                className=" my-auto lg:pl-3 2xl:p-6 items-center">
                     <Link 
                     to="wallet">
                         <RiWallet3Line 
@@ -69,7 +69,7 @@ const LinkItem = ({href, children}) => {
     return(
         <Link 
         to={href}
-        className=" flex-1 py-6 px-10 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
+        className=" flex-1 py-6 lg:px-5 2xl:px-10 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
             {children}
         </Link>
     )
