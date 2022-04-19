@@ -16,7 +16,7 @@ export default function Index() {
 function HomePage() {
   return (
     <div className='bg-blue-600 max-w-screen-lg mx-auto pt-10'>
-      <div className='relative md:flex '>
+      <div className='relative md:flex h-[27rem]'>
         <div className='md:flex-col my-auto items-center'>
           <h1 className='text-4xl font-bold font-quicksand text-gray-50'>
             Discover and Buy your own <br /> NFTs & Digital Properties
@@ -44,7 +44,7 @@ function HomePage() {
             </a>
           </div>
         </div>
-        <div className="w-96 h-80 top-0 right-0 absolute rounded-xl bg-gray-50 ">
+        <div className="w-[32rem] h-[26rem] top-0 right-0 absolute rounded-xl bg-gray-50 ">
 
         </div>
       </div>
@@ -101,12 +101,12 @@ const DiscoverAndCreate = () => {
           <RiWallet3Line className="h-12 w-12  fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
-            className='font-bold text-lg text-gray-50 font-quicksand'>
+            className='font-black text-lg text-gray-50 font-quicksand'>
               Setting Up a Wallet
             </h3>
           </div>
           <div className=' pt-1 text-center'>  
-            <p className='font-sm tracking-tight leading-5 text-gray-50 font-quicksand'>
+            <p className='font-light tracking-tight leading-5 text-gray-50 font-quicksand'>
               Set up an 
               <Link to="wallet">
                 <span className='font-bold ml-1 text-blue-400'>
@@ -121,12 +121,12 @@ const DiscoverAndCreate = () => {
           <RiImageAddFill className="h-12 w-12  fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
-            className='font-bold text-lg text-gray-50 font-quicksand'>
+            className='font-black text-lg text-gray-50 font-quicksand'>
               Create NFTs
             </h3>
           </div>
           <div className=' pt-1 text-center'>  
-            <p className='font-sm tracking-tight leading-5 text-gray-50 font-quicksand'>
+            <p className='font-light tracking-tight leading-5 text-gray-50 font-quicksand'>
               Upload your work (art, audio, or 3D models), add your title and descriptions, and customize the NFT.
             </p>
           </div>
@@ -135,12 +135,12 @@ const DiscoverAndCreate = () => {
           <RiUpload2Fill className="h-12 w-12  fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
-            className='font-bold text-lg text-gray-50 font-quicksand'>
+            className='font-black text-lg text-gray-50 font-quicksand'>
               Make it Public
             </h3>
           </div>
           <div className=' pt-1 text-center'>  
-            <p className='font-sm tracking-tight leading-5 text-gray-50 font-quicksand'>
+            <p className='font-light tracking-tight leading-5 text-gray-50 font-quicksand'>
               You can either make your NFT private for yourself to see, or you can make it visible to everyone.
             </p>
           </div>

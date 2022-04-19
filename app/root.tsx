@@ -23,7 +23,7 @@ export const links: LinksFunction = () => {
     { rel: "stylesheet", href: tailwindStylesheetUrl },
     { rel: "preconnect", href: 'https://fonts.googleapis.com'},
     { rel: "preconnect", href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous'},
-    { rel: "stylesheet", href: 'https://fonts.googleapis.com/css2?family=Quicksand&display=swap'},
+    { rel: "stylesheet", href: 'https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap'},
   ];
 };
 
@@ -73,6 +73,7 @@ export function ErrorBoundary({ error }) {
       </head>
       <body>
         {/* add the UI you want your users to see */}
+        <Nav/>
         <p>404</p>
         <Scripts />
       </body>

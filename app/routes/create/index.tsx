@@ -4,8 +4,9 @@ export default function Create() {
   return (
     
     <main>
-      <Nav/>
-      <h1>Create</h1>
+      <div className='min-h-screen bg-blue-600'>
+        <h1 className='text-gray-50 font-bold font-quicksand'>Create ur pussy</h1>
+      </div>
     </main>
   );
 }
