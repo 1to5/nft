@@ -73,6 +73,7 @@ export function ErrorBoundary({ error }) {
       </head>
       <body>
         {/* add the UI you want your users to see */}
+        <Nav/>
         <p>404</p>
         <Scripts />
       </body>

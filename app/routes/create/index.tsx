@@ -5,7 +5,7 @@ export default function Create() {
     
     <main>
       <div className='min-h-screen bg-blue-600'>
-        <h1 className='text-gray-50 font-bold font-quicksand'>Create ur shit</h1>
+        <h1 className='text-gray-50 font-bold font-quicksand'>Create ur pussy</h1>
       </div>
     </main>
   );
