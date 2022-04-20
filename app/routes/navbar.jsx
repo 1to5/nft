@@ -29,7 +29,7 @@ export default function Nav() {
             type="text" 
             placeholder="Search..." 
             className="block ml-32 h-10 w-1/3 font-quicksand font-semibold 
-            placeholder:text-gray-50  dark:bg-blue-500 opacity-80 
+            placeholder:dark:text-gray-50 placeholder:text-gray-900 border-2 dark:bg-blue-500 opacity-80 
             border-black py-2 pl-9 rounded-full focus:outline-none 
             focus:shadow-outline my-auto"
             />
@@ -49,7 +49,7 @@ export default function Nav() {
                 </LinkItem>
                 <div className=" my-auto lg:p-3 2xl:p-6 items-center">
                     <Link to="profile">
-                        <RiAccountCircleLine className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
+                        <RiAccountCircleLine className="h-8 w-8 dark:hover:fill-blue-500 dark:fill-blue-300 hover:fill-gray-800 fill-gray-600 " />
                     </Link>
                 </div>
                 <div 
@@ -57,7 +57,7 @@ export default function Nav() {
                     <Link 
                     to="wallet">
                         <RiWallet3Line 
-                        className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
+                        className="h-8 w-8 dark:hover:fill-blue-500 hover:fill-gray-900 fill-gray-600 dark:fill-blue-300" />
                     </Link>
                 </div>
             </div>
@@ -69,7 +69,7 @@ const LinkItem = ({href, children}) => {
     return(
         <Link 
         to={href}
-        className=" flex-1 py-6 lg:px-5 2xl:px-10 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
+        className=" flex-1 py-6 lg:px-5 2xl:px-10 my-auto font-bold text-gray-600 hover:text-gray-900 dark:hover:text-blue-400 font-quicksand dark:text-blue-300 rounded-md">
             {children}
         </Link>
     )
