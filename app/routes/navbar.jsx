@@ -4,17 +4,17 @@ import  {RiAccountCircleLine, RiWallet3Line} from "react-icons/ri";
 export default function Nav() {
     return(
         <nav 
-        className="relative w-full flex h-20 bg-blue-900 dark:bg-blue-300">
+        className=" relative w-full flex h-20 bg-blue-50 dark:bg-blue-900">
             <Link 
             to="/" 
             className="inline-flex ml-6 my-auto">
                 <div 
-                className=' flex-none h-12 w-12 bg-blue-300 rounded-full '>
+                className=' flex-none h-12 w-12 bg-blue-600 dark:bg-blue-300 rounded-full '>
                     
                 </div>
                 <p 
                 className='
-                my-auto ml-3 text-xl font-bold font-quicksand text-blue-50'>
+                my-auto ml-3 text-xl font-bold font-quicksand text-gray-900 dark:text-blue-50'>
                     Undecided
                 </p>
             </Link>
@@ -29,7 +29,7 @@ export default function Nav() {
             type="text" 
             placeholder="Search..." 
             className="block ml-32 h-10 w-1/3 font-quicksand font-semibold 
-            placeholder:text-gray-50 text-gray-50 bg-blue-500 opacity-80 
+            placeholder:text-gray-50  dark:bg-blue-500 opacity-80 
             border-black py-2 pl-9 rounded-full focus:outline-none 
             focus:shadow-outline my-auto"
             />
