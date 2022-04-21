@@ -1,5 +1,6 @@
 import {Link} from "remix";
 import  {RiAccountCircleLine, RiWallet3Line} from "react-icons/ri";
+import ToggleButton from './components/toggleThemeBtn';
 
 export default function Nav() {
     return(
@@ -34,7 +35,7 @@ export default function Nav() {
             focus:shadow-outline my-auto"
             />
             <div 
-            className='absolute right-0 flex mr-16'>
+            className='absolute right-0 flex mr-12'>
                 <LinkItem href="explore">
                     Explore
                 </LinkItem>
@@ -59,6 +60,9 @@ export default function Nav() {
                         <RiWallet3Line 
                         className="h-8 w-8 dark:hover:fill-blue-500 hover:fill-gray-900 fill-gray-600 dark:fill-blue-300" />
                     </Link>
+                </div>
+                <div className='my-auto lg:pl-3 2xl:p-6 items-center'>
+                    <ToggleButton />
                 </div>
             </div>
         </nav>
