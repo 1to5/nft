@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
-        <div className='pt-20 bg-blue-900'>
+        <div className='pt-20 dark:bg-blue-900 bg-blue-50'>
             <div className='text-center w-full'>
-                <h1 className='font-black text-2xl text-gray-50 font-quicksand'>
+                <h1 className='font-black text-2xl text-gray-900 dark:text-gray-50 font-quicksand'>
                     Join the Community
                 </h1>
             </div>

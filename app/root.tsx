@@ -11,7 +11,7 @@ import type { LinksFunction, MetaFunction, LoaderFunction } from "remix";
 import { useCatch } from "@remix-run/react";
 import {useState} from 'react';
 
-
+import NotFound from './routes/404.jsx';
 import Nav from './routes/navbar.jsx';
 import Footer from './routes/components/footer.jsx';
 
@@ -47,7 +47,7 @@ export const loader: LoaderFunction = async ({ request }) => {
 };
 
 export default function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('');
 
   function toggleTheme() {
     theme === "" ? setTheme("dark") : setTheme("")
@@ -83,7 +83,9 @@ export function ErrorBoundary({ error }) {
       <body>
         {/* add the UI you want your users to see */}
         <Nav/>
-        <p>404</p>
+        <div className='bg-blue-100 dark:bg-blue-600 h-full w-full'>
+          <NotFound/>
+        </div>
         <Scripts />
       </body>
     </html>
