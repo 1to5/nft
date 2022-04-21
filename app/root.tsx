@@ -9,6 +9,8 @@ import {
 } from "remix";
 import type { LinksFunction, MetaFunction, LoaderFunction } from "remix";
 import { useCatch } from "@remix-run/react";
+import {useState} from 'react';
+
 
 import Nav from './routes/navbar.jsx';
 import Footer from './routes/components/footer.jsx';
@@ -33,6 +35,7 @@ export const meta: MetaFunction = () => ({
   viewport: "width=device-width,initial-scale=1",
 });
 
+
 type LoaderData = {
   user: Awaited<ReturnType<typeof getUser>>;
 };
@@ -44,13 +47,19 @@ export const loader: LoaderFunction = async ({ request }) => {
 };
 
 export default function App() {
+  const [theme, setTheme] = useState('dark');
+
+  function toggleTheme() {
+    theme === "" ? setTheme("dark") : setTheme("")
+  }
+
   return (
     <html lang="en" className="h-full">
       <head>
         <Meta />
         <Links />
       </head>
-      <body className="h-full dark">
+      <body className={`h-full ${theme}`}>
         <Nav/>
         <Outlet />
         <ScrollRestoration />

@@ -31,7 +31,7 @@ function HomePage() {
               to="/create"
               className="relative ease-in duration-100 item-left mr-4 
             rounded-lg w-40 dark:border-2 border bg-blue-300 dark:bg-blue-300 border-gray-900 dark:border-blue-300 
-            dark:hover:bg-blue-200 font-quicksand text-gray-100 text-center hover:bg-blue-400
+            dark:hover:bg-blue-200 font-quicksand text-gray-100 text-center hover:bg-blue-40
             hover:text-gray-50 py-2 font-bold">
               Create
             </Link>
