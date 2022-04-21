@@ -2,7 +2,7 @@ import {Link} from "remix";
 import  {RiAccountCircleLine, RiWallet3Line} from "react-icons/ri";
 import ToggleButton from './components/toggleThemeBtn';
 
-export default function Nav() {
+export default function Nav({toggleTheme}) {
     return(
         <nav 
         className=" relative w-full flex h-20 bg-blue-50 dark:bg-blue-900">
@@ -62,7 +62,7 @@ export default function Nav() {
                     </Link>
                 </div>
                 <div className='my-auto lg:pl-3 2xl:p-6 items-center'>
-                    <ToggleButton />
+                    <ToggleButton toggleTheme={toggleTheme}/>
                 </div>
             </div>
         </nav>

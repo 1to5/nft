@@ -54,13 +54,13 @@ export default function App() {
   }
 
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className={`h-full ${theme}`}>
       <head>
         <Meta />
         <Links />
       </head>
-      <body className={`h-full ${theme}`}>
-        <Nav/>
+      <body>
+        <Nav toggleTheme={toggleTheme}/>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
