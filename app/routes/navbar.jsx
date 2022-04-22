@@ -2,6 +2,16 @@ import {Link} from "remix";
 import  {RiAccountCircleLine, RiWallet3Line} from "react-icons/ri";
 import ToggleButton from './components/toggleThemeBtn';
 
+const LinkItem = ({href, children}) => {
+    return(
+        <Link 
+        to={href}
+        className=" flex-1 py-6 lg:px-5 2xl:px-10 my-auto font-bold text-gray-600 hover:text-gray-900 dark:hover:text-blue-400 font-quicksand dark:text-blue-300 rounded-md">
+            {children}
+        </Link>
+    )
+}
+
 export default function Nav({toggleTheme}) {
     return(
         <nav 
@@ -69,13 +79,4 @@ export default function Nav({toggleTheme}) {
     );
 }
 
-const LinkItem = ({href, children}) => {
-    return(
-        <Link 
-        to={href}
-        className=" flex-1 py-6 lg:px-5 2xl:px-10 my-auto font-bold text-gray-600 hover:text-gray-900 dark:hover:text-blue-400 font-quicksand dark:text-blue-300 rounded-md">
-            {children}
-        </Link>
-    )
-}
 

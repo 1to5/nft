@@ -99,7 +99,7 @@ const DiscoverAndCreate = () => {
       <div
       className='md:flex gap-12 mx-auto '>
         <div className='mx-auto w-64'>
-          <RiWallet3Line className="h-12 w-12  fill-blue-300 mx-auto"/>
+          <RiWallet3Line className="h-12 w-12 fill-blue-500 dark:fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
             className='font-black text-lg text-gray-900 dark:text-gray-50 font-quicksand'>
@@ -119,7 +119,7 @@ const DiscoverAndCreate = () => {
           </div>
         </div>
         <div className='mx-auto w-64'>
-          <RiImageAddFill className="h-12 w-12  fill-blue-300 mx-auto"/>
+          <RiImageAddFill className="h-12 w-12 fill-blue-500 dark:fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
             className='font-black text-lg text-gray-900 dark:text-gray-50 font-quicksand'>
@@ -133,7 +133,7 @@ const DiscoverAndCreate = () => {
           </div>
         </div>
         <div className='mx-auto w-64'>
-          <RiUpload2Fill className="h-12 w-12  fill-blue-300 mx-auto"/>
+          <RiUpload2Fill className="h-12 w-12 fill-blue-500 dark:fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
             className='font-black text-lg text-gray-900 dark:text-gray-50 font-quicksand'>
@@ -166,21 +166,21 @@ const Blogz = () => {
 const BlogzItem = () => {
   return (
     <div className='flex gap-12 w-4/5 mx-auto'>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
+      <div className='mx-auto w-56 h-48 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #1
           </p>
         </div>
       </div>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
+      <div className='mx-auto w-56 h-48 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #2
           </p>
         </div>
       </div>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
+      <div className='mx-auto w-56 h-48 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #3
