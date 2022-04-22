@@ -17,12 +17,12 @@ export default function Create() {
   return (
     
     <main>
-      <div className='min-h-screen bg-blue-600'>
+      <div className='min-h-screen bg-blue-100 dark:bg-blue-600'>
         <div className='flex mx-auto'>
           <button 
           onClick={handleClick}
-          className='bg-blue-500 rounded-xl h-96 w-96 '>
-            
+          className='bg-blue-50 shadow-lg opacity-50 dark:bg-blue-500 rounded-xl h-64 w-64 '>
+            UPLOAD UR SHIT
           </button>
         </div>
       </div>
