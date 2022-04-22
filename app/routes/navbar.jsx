@@ -1,20 +1,21 @@
 import {Link} from "remix";
 import  {RiAccountCircleLine, RiWallet3Line} from "react-icons/ri";
+import ToggleButton from './components/toggleThemeBtn';
 
-export default function Nav() {
+export default function Nav({toggleTheme}) {
     return(
         <nav 
-        className="relative w-full flex h-20 bg-blue-900 dark:bg-blue-300">
+        className=" relative w-full flex h-20 bg-blue-50 dark:bg-blue-900">
             <Link 
             to="/" 
             className="inline-flex ml-6 my-auto">
                 <div 
-                className=' flex-none h-12 w-12 bg-blue-300 rounded-full '>
+                className=' flex-none h-12 w-12 bg-blue-600 dark:bg-blue-300 rounded-full '>
                     
                 </div>
                 <p 
                 className='
-                my-auto ml-3 text-xl font-bold font-quicksand text-blue-50'>
+                my-auto ml-3 text-xl font-bold font-quicksand text-gray-900 dark:text-blue-50'>
                     Undecided
                 </p>
             </Link>
@@ -29,12 +30,12 @@ export default function Nav() {
             type="text" 
             placeholder="Search..." 
             className="block ml-32 h-10 w-1/3 font-quicksand font-semibold 
-            placeholder:text-gray-50 text-gray-50 bg-blue-500 opacity-80 
+            placeholder:dark:text-gray-50 placeholder:text-gray-900 border-2 dark:bg-blue-500 opacity-80 
             border-black py-2 pl-9 rounded-full focus:outline-none 
             focus:shadow-outline my-auto"
             />
             <div 
-            className='absolute right-0 flex mr-16'>
+            className='absolute right-0 flex mr-12'>
                 <LinkItem href="explore">
                     Explore
                 </LinkItem>
@@ -49,7 +50,7 @@ export default function Nav() {
                 </LinkItem>
                 <div className=" my-auto lg:p-3 2xl:p-6 items-center">
                     <Link to="profile">
-                        <RiAccountCircleLine className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
+                        <RiAccountCircleLine className="h-8 w-8 dark:hover:fill-blue-500 dark:fill-blue-300 hover:fill-gray-800 fill-gray-600 " />
                     </Link>
                 </div>
                 <div 
@@ -57,8 +58,11 @@ export default function Nav() {
                     <Link 
                     to="wallet">
                         <RiWallet3Line 
-                        className="h-8 w-8 hover:fill-blue-500 fill-blue-300" />
+                        className="h-8 w-8 dark:hover:fill-blue-500 hover:fill-gray-900 fill-gray-600 dark:fill-blue-300" />
                     </Link>
+                </div>
+                <div className='my-auto lg:pl-3 2xl:p-6 items-center'>
+                    <ToggleButton toggleTheme={toggleTheme}/>
                 </div>
             </div>
         </nav>
@@ -69,7 +73,7 @@ const LinkItem = ({href, children}) => {
     return(
         <Link 
         to={href}
-        className=" flex-1 py-6 lg:px-5 2xl:px-10 my-auto font-bold hover:text-blue-400 font-quicksand text-blue-300 rounded-md">
+        className=" flex-1 py-6 lg:px-5 2xl:px-10 my-auto font-bold text-gray-600 hover:text-gray-900 dark:hover:text-blue-400 font-quicksand dark:text-blue-300 rounded-md">
             {children}
         </Link>
     )
