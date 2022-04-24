@@ -28,40 +28,28 @@ export default function Create() {
             </span>
             Required  
           </p>
-          <div className='flex relative mx-auto mt-36'>
-            <div className='grid my-auto gap-y-16'>
-              <div className='grid grid-cols-1 gap-y-8'>
-                <div className='col-span-1'>
-                  <label className='text-sm text-gray-700 font-quicksand font-light dark:text-gray-100'>
-                    <span className='text-l pt-1 text-gray-900 dark:text-gray-50 font-bold'>
-                      *
-                    </span>
-                    Item Name
-                  </label>
-                  <input className='w-full py-2 px-3 text-gray-700 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-gray-500 dark:focus:border-gray-600' type='text' placeholder='Item Name' />
-                </div>
-                <div className='col-span-1'>
-                  <label className='text-sm text-gray-700 font-quicksand font-light dark:text-gray-100'>
-                    <span className='text-l pt-1 text-gray-900 dark:text-gray-50 font-bold'>
-                      *
-                    </span>
-                    Item Description
-                  </label>
-                  <input className='w-full py-2 px-3 text-gray-700 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-gray-500 dark:focus:border-gray-600' type='text' placeholder='Item Description' />
-                </div>
-                <div className='col-span-1'>
-                  <label className='text-sm text-gray-700 font-quicksand font-light dark:text-gray-100'>
-                    <span className='text-l pt-1 text-gray-900 dark:text-gray-50 font-bold'>
-                      *
-                    </span>
-                    Item Price
-                  </label>
-                  <input className='w-full py-2 px-3 text-gray-700 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-gray-500 dark:focus:border-gray-600' type='text' placeholder='Item Price' />
-                </div>
-              {/* <input type='text' className='w-96 p-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500' placeholder='Item Name'/>
-              <input type='text' className='w-[30rem] p-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500' placeholder='External Links'/> */}
+          <div className='flex relative mx-auto mt-12'>
+            <div className=''>
+              <div className='w-[32rem] mb-8'>
+                <label for="name" className='text-gray-900 font-quicksand font-bold'>
+                  <span className='text-lg pr-1 pt-1 text-red-500 dark:text-gray-50 font-quicksand font-bold'>
+                    *
+                  </span>
+                  Name
+                </label>
+                <input type='text' className='w-full p-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500' placeholder='Item Name' id="name"/>
+              </div>
+              <div className=''>
+                <label for="description" className='text-gray-900 font-quicksand font-bold'>
+                  <span className='text-lg pr-1 pt-1 text-red-500 dark:text-gray-50 font-quicksand font-bold'>
+                    *
+                  </span>
+                  Description
+                </label>
+                <input type='text' className='w-full p-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500' placeholder='Item Name' id="description"/>
+              </div>
             </div>
-            <div className='mt-16 absolute lg:mr-20 right-0'>
+            <div className='mt-32 absolute lg:mr-20 right-0'>
               <input
               type="file"
               id="file-upload" hidden
@@ -76,3 +64,4 @@ export default function Create() {
     </main>
   );
 }
+
