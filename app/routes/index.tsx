@@ -156,7 +156,7 @@ const Blogz = () => {
     <div className='mx-auto mt-32 pb-20'>
       <div className='text-center h-24'>
         <h1
-        className='font-black text-2xl font-quicksand text-gray-50'>Before you Begin:</h1>
+        className='font-black text-2xl font-quicksand text-gray-900 dark:text-gray-50'>Before you Begin:</h1>
       </div>
       <BlogzItem/>
     </div>
