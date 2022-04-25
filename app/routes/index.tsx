@@ -72,9 +72,9 @@ const FeaturedNFTs = () => {
 
         </div> */}
         <div className='md:flex gap-16 mx-auto'>
-          <FeaturedNFTsItems href="nft1">Nice</FeaturedNFTsItems>
-          <FeaturedNFTsItems href="nft2">Chill NFTs</FeaturedNFTsItems>
-          <FeaturedNFTsItems href="nft3">Nice</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="items" id="nft1">Nice</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="items" id="nft2">Chill NFTs</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="items" id="nft3">Nice</FeaturedNFTsItems>
         </div>
         {/* <div className='pl-9 w-10 h-10 my-auto rotate-45 border-t-4 border-r-4 border-blue-50 rounded-sm'>
 

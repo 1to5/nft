@@ -55,11 +55,11 @@ export default function Nav({toggleTheme}) {
                 <LinkItem href="blog">
                     Blogs
                 </LinkItem>
-                <LinkItem href="create">
+                <LinkItem href="items/create">
                     Create 
                 </LinkItem>
                 <div className=" my-auto lg:p-3 2xl:p-6 items-center">
-                    <Link to="profile">
+                    <Link to="account">
                         <RiAccountCircleLine className="h-8 w-8 dark:hover:fill-blue-500 dark:fill-blue-300 hover:fill-gray-800 fill-gray-600 " />
                     </Link>
                 </div>
