@@ -5,8 +5,7 @@ export default function ToggleButton({toggleTheme}) {
     return(
         <div className=' 2xl:p-0 lg:p-6 w-16 h-auto'>
             <div 
-            className='' 
-            
+            className=''  
             onClick={toggleTheme}>
                 <RiSunLine 
                 className='transition  hover:scale-150 delay-50 h-8 w-8 fill-gray-300 hover:fill-gray-800 duration-300 dark:fill-gray-50 dark:hover:fill-gray-300 ease-in-out' />
