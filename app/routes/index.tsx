@@ -28,7 +28,7 @@ function HomePage() {
           </p>
           <div className="flex justify-center mt-10 w-80">
             <Link
-              to="/create"
+              to="/items/create"
               className="relative ease-in duration-100 item-left mr-4 
             rounded-lg w-40 dark:border-2 border bg-blue-300 border-gray-900 dark:border-blue-300 
             hover:bg-blue-200 font-quicksand text-gray-100 text-center hover:bg-blue-40
@@ -128,7 +128,7 @@ const DiscoverAndCreate = () => {
           </div>
           <div className=' pt-1 text-center'>  
             <p className='font-light tracking-tight leading-5 text-gray-900 dark:text-gray-50 font-quicksand'>
-              Upload your work (art, audio, or 3D models), add your title and descriptions, and customize the NFT.
+              Upload your work (art, audio, or 3D models), add your title and descriptions, and customize your NFT.
             </p>
           </div>
         </div>
@@ -142,7 +142,7 @@ const DiscoverAndCreate = () => {
           </div>
           <div className=' pt-1 text-center'>  
             <p className='font-light tracking-tight leading-5 text-gray-900 dark:text-gray-50 font-quicksand'>
-              You can either make your NFT private for yourself to see, or you can make it visible to everyone.
+              You can either make your NFT private, or you can make it visible to everyone.
             </p>
           </div>
         </div>
@@ -166,21 +166,21 @@ const Blogz = () => {
 const BlogzItem = () => {
   return (
     <div className='flex gap-12 w-4/5 mx-auto'>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
+      <div className='mx-auto w-80 h-64 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #1
           </p>
         </div>
       </div>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
+      <div className='mx-auto w-80 h-64 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #2
           </p>
         </div>
       </div>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
+      <div className='mx-auto w-80 h-64 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #3
