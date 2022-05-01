@@ -1,10 +1,10 @@
 import { Link } from 'remix';
-export default function FeaturedNFTsItems ({href, children}) {
+export default function FeaturedNFTsItems ({href, children, id}) {
   return(
-    <Link to={href}>
-      <div className='w-72 h-96 shadow-xl bg-gray-300 dark:bg-gray-50 rounded-xl'>
+    <Link to={`${href}/${id}`}>
+      <div className='w-72 h-96 shadow-xl bg-gray-50 dark:bg-gray-50 rounded-xl'>
         <p
-        className='text-center '>{children}</p>
+        className='text-center pt-12'>{children}</p>
       </div>  
     </Link>
   )

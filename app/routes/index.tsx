@@ -28,7 +28,7 @@ function HomePage() {
           </p>
           <div className="flex justify-center mt-10 w-80">
             <Link
-              to="/create"
+              to="/items/create"
               className="relative ease-in duration-100 item-left mr-4 
             rounded-lg w-40 dark:border-2 border bg-blue-300 border-gray-900 dark:border-blue-300 
             hover:bg-blue-200 font-quicksand text-gray-100 text-center hover:bg-blue-40
@@ -72,9 +72,9 @@ const FeaturedNFTs = () => {
 
         </div> */}
         <div className='md:flex gap-16 mx-auto'>
-          <FeaturedNFTsItems href="nft1">Nice</FeaturedNFTsItems>
-          <FeaturedNFTsItems href="nft2">Chill NFTs</FeaturedNFTsItems>
-          <FeaturedNFTsItems href="nft3">Nice</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="items" id="nft1">Nice</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="items" id="nft2">Chill NFTs</FeaturedNFTsItems>
+          <FeaturedNFTsItems href="items" id="nft3">Nice</FeaturedNFTsItems>
         </div>
         {/* <div className='pl-9 w-10 h-10 my-auto rotate-45 border-t-4 border-r-4 border-blue-50 rounded-sm'>
 
@@ -99,7 +99,7 @@ const DiscoverAndCreate = () => {
       <div
       className='md:flex gap-12 mx-auto '>
         <div className='mx-auto w-64'>
-          <RiWallet3Line className="h-12 w-12  fill-blue-300 mx-auto"/>
+          <RiWallet3Line className="h-12 w-12 fill-blue-500 dark:fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
             className='font-black text-lg text-gray-900 dark:text-gray-50 font-quicksand'>
@@ -119,7 +119,7 @@ const DiscoverAndCreate = () => {
           </div>
         </div>
         <div className='mx-auto w-64'>
-          <RiImageAddFill className="h-12 w-12  fill-blue-300 mx-auto"/>
+          <RiImageAddFill className="h-12 w-12 fill-blue-500 dark:fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
             className='font-black text-lg text-gray-900 dark:text-gray-50 font-quicksand'>
@@ -128,12 +128,12 @@ const DiscoverAndCreate = () => {
           </div>
           <div className=' pt-1 text-center'>  
             <p className='font-light tracking-tight leading-5 text-gray-900 dark:text-gray-50 font-quicksand'>
-              Upload your work (art, audio, or 3D models), add your title and descriptions, and customize the NFT.
+              Upload your work (art, audio, or 3D models), add your title and descriptions, and customize your NFT.
             </p>
           </div>
         </div>
         <div className='mx-auto w-64'>
-          <RiUpload2Fill className="h-12 w-12  fill-blue-300 mx-auto"/>
+          <RiUpload2Fill className="h-12 w-12 fill-blue-500 dark:fill-blue-300 mx-auto"/>
           <div className='pt-4 text-center'>
             <h3
             className='font-black text-lg text-gray-900 dark:text-gray-50 font-quicksand'>
@@ -142,7 +142,7 @@ const DiscoverAndCreate = () => {
           </div>
           <div className=' pt-1 text-center'>  
             <p className='font-light tracking-tight leading-5 text-gray-900 dark:text-gray-50 font-quicksand'>
-              You can either make your NFT private for yourself to see, or you can make it visible to everyone.
+              You can either make your NFT private, or you can make it visible to everyone.
             </p>
           </div>
         </div>
@@ -156,7 +156,7 @@ const Blogz = () => {
     <div className='mx-auto mt-32 pb-20'>
       <div className='text-center h-24'>
         <h1
-        className='font-black text-2xl font-quicksand text-gray-50'>Before you Begin:</h1>
+        className='font-black text-2xl font-quicksand text-gray-900 dark:text-gray-50'>Before you Begin:</h1>
       </div>
       <BlogzItem/>
     </div>
@@ -166,21 +166,21 @@ const Blogz = () => {
 const BlogzItem = () => {
   return (
     <div className='flex gap-12 w-4/5 mx-auto'>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
+      <div className='mx-auto w-80 h-64 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #1
           </p>
         </div>
       </div>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
+      <div className='mx-auto w-80 h-64 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #2
           </p>
         </div>
       </div>
-      <div className='mx-auto w-56 h-48 relative rounded-lg bg-blue-500'>
+      <div className='mx-auto w-80 h-64 relative rounded-lg bg-gray-100 shadow-xl opacity-80 dark:opacity-100 dark:bg-blue-500'>
         <div className='absolute bottom-0 h-1/5 w-full bg-gray-700 opacity-60 rounded-br-lg rounded-bl-lg'>
           <p className='font-bold text-center font-quicksand text-gray-50'>
             Bloggio #3

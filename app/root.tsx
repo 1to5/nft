@@ -51,6 +51,7 @@ export default function App() {
 
   function toggleTheme() {
     theme === "" ? setTheme("dark") : setTheme("")
+    return theme;
   }
 
   return (
