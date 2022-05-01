@@ -11,7 +11,7 @@ import type { LinksFunction, MetaFunction, LoaderFunction } from "remix";
 import { useCatch } from "@remix-run/react";
 import {useState} from 'react';
 
-import NotFound from './routes/404.jsx';
+import NotFound from './routes/404.js';
 import Nav from './routes/navbar.jsx';
 import Footer from './routes/components/footer.jsx';
 
@@ -72,7 +72,7 @@ export default function App() {
   );
 }
 
-export function ErrorBoundary({ error }) {
+export function ErrorBoundary({ error }: any) {
   console.error(error);
   return (
     <html>
